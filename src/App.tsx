@@ -1,15 +1,22 @@
+import { useState } from "react";
 import styles from "./App.module.css";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import Input from "./components/Input";
+import { Todo } from "./utils/modals";
 
-function App() {
-  
+const App: React.FC = () => {
+  const [todo, setTodo] = useState<string>("");
+  const [todos,setTodos] = useState<Todo[]>([]);
+
+const handleAdd = (e:React.FormEvent)=>{
+  e.preventDefault
+}
+
   return (
-    <div className={styles.App}>
-      <Navbar />
-      <Sidebar />
+    <div className={styles.container}>
+      <span className={styles.heading}>TASKIFY</span>
+      <Input todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
     </div>
   );
-}
+};
 
 export default App;

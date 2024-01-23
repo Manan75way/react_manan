@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
   color: orange;
 }
@@ -36,4 +36,24 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-family: "Neucha", cursive;
 }
